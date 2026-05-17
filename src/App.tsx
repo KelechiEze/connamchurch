@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { ProjectMarquee } from "./components/ProjectMarquee";
 import { ChurchShowcase } from "./components/ChurchShowcase";
 import { SplitScrollSection } from "./components/SplitScrollSection";
+import { MissionSection } from "./components/MissionSection";
 import { StackedCardSection } from "./components/StackedCardSection";
 import { PromiseSection } from "./components/PromiseSection";
 import { TabbedSection } from "./components/TabbedSection";
@@ -114,6 +115,7 @@ function LandingPage() {
       <SplitScrollSection />
       <StackedCardSection />
       <PromiseSection />
+      <MissionSection />
       <TabbedSection />
       <NewsPreviewSection />
       <ValuesSection />
