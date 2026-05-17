@@ -5,8 +5,9 @@ import { Hero } from "./components/Hero";
 import { ProjectMarquee } from "./components/ProjectMarquee";
 import { ChurchShowcase } from "./components/ChurchShowcase";
 import { SplitScrollSection } from "./components/SplitScrollSection";
-import { MissionSection } from "./components/MissionSection";
 import { StackedCardSection } from "./components/StackedCardSection";
+import { VideoScriptureSection } from "./components/VideoScriptureSection";
+import { MissionSection } from "./components/MissionSection";
 import { PromiseSection } from "./components/PromiseSection";
 import { TabbedSection } from "./components/TabbedSection";
 import { ValuesSection } from "./components/ValuesSection";
@@ -14,6 +15,7 @@ import { NewsPage } from "./pages/NewsPage";
 import { AboutPage } from "./pages/AboutPage";
 import { ClergyPage } from "./pages/ClergyPage";
 import { MinistriesPage } from "./pages/MinistriesPage";
+import { ContactPage } from "./pages/ContactPage";
 import { BiblePage } from "./pages/BiblePage";
 import { PrayerPage } from "./pages/PrayerPage";
 import { ArrowRight } from "lucide-react";
@@ -111,6 +113,7 @@ function LandingPage() {
     <>
       <Hero />
       <ProjectMarquee />
+      <VideoScriptureSection />
       <ChurchShowcase />
       <SplitScrollSection />
       <StackedCardSection />
@@ -136,6 +139,7 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/clergy" element={<ClergyPage />} />
             <Route path="/ministries" element={<MinistriesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/bible" element={<BiblePage />} />
             <Route path="/prayer" element={<PrayerPage />} />
           </Routes>
@@ -143,7 +147,7 @@ export default function App() {
         
         <footer className="bg-gray-50 text-gray-600 py-24 border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
               <div className="flex flex-col gap-6">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-[#8B11B1] flex items-center justify-center">
@@ -163,6 +167,22 @@ export default function App() {
                   <a href="mailto:canonchinatu57@gmail.com" className="text-base font-bold text-[#1e2a4a] hover:text-[#8B11B1] transition-colors">canonchinatu57@gmail.com</a>
                   <p className="text-gray-500 font-medium">717-623-2113</p>
                   <p className="text-gray-500 font-medium">609-382-6583</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-6">
+                <h4 className="text-xs font-black uppercase tracking-[0.3em] text-[#8B11B1]">Quick Links</h4>
+                <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+                  {[
+                    { name: "About", path: "/about" },
+                    { name: "Clergy", path: "/clergy" },
+                    { name: "Ministries", path: "/ministries" },
+                    { name: "Contact", path: "/contact" },
+                    { name: "Bible", path: "/bible" },
+                    { name: "Prayer", path: "/prayer" }
+                  ].map(link => (
+                    <Link key={link.name} to={link.path} className="text-[10px] font-black uppercase tracking-widest hover:text-[#8B11B1] transition-colors">{link.name}</Link>
+                  ))}
                 </div>
               </div>
 
