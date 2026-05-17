@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Search, BookOpen, ChevronRight, Loader2, Bookmark, ChevronLeft } from "lucide-react";
 
@@ -36,7 +36,6 @@ export function BiblePage() {
   const [bibleData, setBibleData] = useState<BibleResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const contentRef = useRef<HTMLDivElement>(null);
 
   const fetchVerses = async (q: string) => {
     if (!q) return;
@@ -47,12 +46,6 @@ export function BiblePage() {
       if (!res.ok) throw new Error("Reference not found. Please try something like 'Psalm 23' or 'John 1:1-5'");
       const data = await res.json();
       setBibleData(data);
-      
-      // Scroll to top after data loads
-      if (contentRef.current) {
-        contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -76,13 +69,6 @@ export function BiblePage() {
   const handlePrevChapter = () => {
     if (selectedChapter > 1) {
       setSelectedChapter(prev => prev - 1);
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
@@ -207,7 +193,7 @@ export function BiblePage() {
            </div>
 
            {/* Main Viewer */}
-           <div ref={contentRef} className="lg:col-span-9 min-h-[60vh] relative">
+           <div className="lg:col-span-9 min-h-[60vh] relative">
               <AnimatePresence mode="wait">
                  {loading ? (
                    <motion.div 
@@ -272,7 +258,7 @@ export function BiblePage() {
                           </button>
                           
                           <button 
-                             onClick={scrollToTop}
+                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                              className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-300 hover:text-[#8B11B1] transition-colors"
                           >
                              Back to top
