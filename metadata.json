@@ -1,0 +1,8 @@
+{
+  "name": "Anglican Church of the Pentecost",
+  "description": "A spiritual sanctuary for renewal and growth in faith, featuring sermons, community outreach, and prayer support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #8B11B1;
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-spin-slower: spin 12s linear infinite;
+}
+
+@layer utilities {
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+  }
+  .animate-infinite-scroll-reverse {
+    animation: infinite-scroll-reverse 40s linear infinite;
+  }
+}
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes infinite-scroll-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
