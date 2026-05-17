@@ -5,7 +5,13 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# This is critical - handles SPA routing without breaking assets
+# Handle static assets FIRST - don't redirect them
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+# SPA fallback - only redirect if file doesn't exist
 [[redirects]]
   from = "/*"
   to = "/index.html"
