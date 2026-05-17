@@ -1,5 +1,0 @@
-# Handle asset requests - don't redirect them
-/assets/* /assets/:splat 200
-
-# Everything else goes to index.html
-/* /index.html 200
