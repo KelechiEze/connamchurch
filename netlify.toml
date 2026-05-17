@@ -5,22 +5,25 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# SPA redirects - CRITICAL for React Router
+# IMPORTANT: Order matters! Put more specific rules first
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = false
+
+# Catch-all for SPA - but DON'T redirect assets
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = true
+  force = false
+  # Exclude static assets from being redirected
+  conditions = { Role = ["!/*.js", "!/*.css", "!/*.png", "!/*.jpg", "!/*.mp4"] }
 
-# Cache static assets
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Video files support
-[[headers]]
-  for = "/images/*.mp4"
-  [headers.values]
-    Content-Type = "video/mp4"
-    Cache-Control = "public, max-age=31536000"
+# Better approach - use this instead of the above
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  except = ["/*.js", "/*.css", "/*.png", "/*.jpg", "/*.jpeg", "/*.svg", "/*.ico", "/*.webp", "/*.mp4", "/*.webm", "/assets/*"]
