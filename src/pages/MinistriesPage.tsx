@@ -20,7 +20,7 @@ const ministries: Ministry[] = [
     subtitle: "Mothers' Union",
     tagline: "Spiritual Care for Every Woman",
     description: "In the Anglican tradition, the women's ministry is known as the Mothers' Union. This is the home-making department where women and mothers meet for prayers, studies and teaching on sundry issues that promote good Christian family and marital experiences. Mothers’ Union in our church is the best forum for spiritual care specific to mothers, singles and all women.",
-    image: "/src/assets/images/womens_ministry_portrait_1779017576860.png",
+    image: "/images/womens_ministry_portrait_1779017576860.png",
     icon: Heart
   },
   {
@@ -29,7 +29,7 @@ const ministries: Ministry[] = [
     subtitle: "Anglican Youth Fellowship (AYF)",
     tagline: "Building a Christian Worldview",
     description: "The Anglican Youth Fellowship (AYF) is devoted to ministering to young people from the middle through high school. This is the age for strong doctrinal formation and grounding in the Christian worldview of life. Your child should not later abandon Christ or fall prey to predatory demonic philosophies if he or she has had a sound spiritual formation in the youth department. We try and answer practical questions confronting today’s youths in the market place, while encouraging them to be faithful to the word of God.",
-    image: "/src/assets/images/youth_ministry_group_1779017593705.png",
+    image: "/images/youth_ministry_group_1779017593705.png",
     icon: Users
   },
   {
@@ -38,7 +38,7 @@ const ministries: Ministry[] = [
     subtitle: "The Foundation",
     tagline: "Introducing Christ to Young Minds",
     description: "This department cares for all children from Kindergarten through 6th grade. This is the sanctuary for introducing Christ to young minds and planting the seeds of faith that will grow for a lifetime. We provide a safe, nurturing environment where the Word of God comes alive through age-appropriate teaching and joyful worship.",
-    image: "/src/assets/images/children_ministry_room_1779017611317.png",
+    image: "/images/children_ministry_room_1779017611317.png",
     icon: Sparkles
   }
 ];

@@ -11,7 +11,7 @@ export function ValuesSection() {
           <div className="lg:col-span-3">
              <div className="bg-neutral-50 overflow-hidden shadow-sm border border-neutral-100">
                 <img 
-                  src="/src/assets/images/values_commitment_card_1779010534068.png" 
+                  src="/images/values_commitment_card_1779010534068.png" 
                   className="w-full aspect-square object-cover" 
                   alt="Our Commitment"
                 />

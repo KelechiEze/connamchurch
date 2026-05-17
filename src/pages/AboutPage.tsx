@@ -3,19 +3,19 @@ import { useEffect, useRef } from "react";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 const row1Images = [
-  "/src/assets/images/church_hero_spirit_1779011074740.png",
-  "/src/assets/images/church_community_outreach_1779011107802.png",
-  "/src/assets/images/news_grid_1_1779011181863.png",
-  "/src/assets/images/church_sermon_media_1779011123956.png",
-  "/src/assets/images/hero_bg_community_1779009595537.png",
+  "/images/church_hero_spirit_1779011074740.png",
+  "/images/church_community_outreach_1779011107802.png",
+  "/images/news_grid_1_1779011181863.png",
+  "/images/church_sermon_media_1779011123956.png",
+  "/images/hero_bg_community_1779009595537.png",
 ];
 
 const row2Images = [
-  "/src/assets/images/church_leaders_portrait_1779011093532.png",
-  "/src/assets/images/news_featured_1_1779011146657.png",
-  "/src/assets/images/news_coverage_1_1779011165326.png",
-  "/src/assets/images/hero_bg_abstract_1779009650835.png",
-  "/src/assets/images/church_community_outreach_1779011107802.png",
+  "/images/church_leaders_portrait_1779011093532.png",
+  "/images/news_featured_1_1779011146657.png",
+  "/images/news_coverage_1_1779011165326.png",
+  "/images/hero_bg_abstract_1779009650835.png",
+  "/images/church_community_outreach_1779011107802.png",
 ];
 
 export function AboutPage() {
@@ -32,7 +32,7 @@ export function AboutPage() {
         {/* Fixed Background */}
         <div 
           className="absolute inset-0 z-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: `url('/src/assets/images/church_hero_spirit_1779011074740.png')` }}
+          style={{ backgroundImage: `url('/images/church_hero_spirit_1779011074740.png')` }}
         />
         <div className="absolute inset-0 bg-black/60 z-10" />
 
@@ -70,7 +70,7 @@ export function AboutPage() {
               <h2 className="text-xs font-black uppercase tracking-[0.5em] text-[#8B11B1] mb-8">Who We Are</h2>
               <div className="relative">
                  <img 
-                   src="/src/assets/images/church_hero_spirit_1779011074740.png" 
+                   src="/images/church_hero_spirit_1779011074740.png" 
                    className="w-full aspect-[3/4] object-cover shadow-2xl" 
                    alt="Spirit"
                  />
@@ -167,7 +167,7 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
              <img 
-               src="/src/assets/images/church_community_outreach_1779011107802.png" 
+               src="/images/church_community_outreach_1779011107802.png" 
                className="w-full aspect-square object-cover shadow-2xl" 
                alt="Local outreach"
              />
@@ -204,7 +204,7 @@ export function AboutPage() {
       <section className="relative min-h-[60vh] flex items-center px-4 sm:px-6 lg:px-20 py-24 overflow-hidden">
          <div className="absolute inset-0 z-0">
             <img 
-              src="/src/assets/images/news_featured_1_1779011146657.png" 
+              src="/images/news_featured_1_1779011146657.png" 
               className="w-full h-full object-cover brightness-[0.3]" 
               alt="Leadership"
             />

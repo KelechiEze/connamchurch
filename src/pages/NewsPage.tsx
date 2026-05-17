@@ -34,7 +34,7 @@ export function NewsPage() {
           <div className="lg:col-span-8 group cursor-pointer">
             <div className="relative aspect-[16/9] overflow-hidden mb-6">
                 <img 
-                  src="/src/assets/images/news_featured_1_1779011146657.png" 
+                  src="/images/news_featured_1_1779011146657.png" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
                   alt="Main News"
                 />
@@ -56,7 +56,7 @@ export function NewsPage() {
              ].map(item => (
                 <div key={item.id} className="group cursor-pointer">
                    <div className="relative aspect-video overflow-hidden mb-4">
-                      <img src={`/src/assets/images/news_grid_1_1779011181863.png`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Thumb" />
+                      <img src={`/images/news_grid_1_1779011181863.png`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Thumb" />
                    </div>
                    <p className="text-[9px] font-black uppercase tracking-widest text-gray-400 mb-2">{item.cat} • {item.date}</p>
                    <h3 className="text-lg font-bold text-[#1e2a4a] group-hover:text-[#8B11B1] transition-colors leading-tight">{item.title}</h3>
@@ -72,10 +72,10 @@ export function NewsPage() {
           <h2 className="text-4xl md:text-5xl font-black text-[#1e2a4a] text-center mb-16 tracking-tight">Public News Updates</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
              {[
-               { id: 1, cat: "Impact", title: "New Outreach Research Advances Public Health", img: "/src/assets/images/news_coverage_1_1779011165326.png" },
-               { id: 2, cat: "Together", title: "Global Teams Advance Next Generation Faith", img: "/src/assets/images/church_hero_spirit_1779011074740.png" },
-               { id: 3, cat: "Empower", title: "Ministries Protect Communities Worldwide", img: "/src/assets/images/church_community_outreach_1779011107802.png" },
-               { id: 4, cat: "Integrity", title: "Transparent Research Builds Public Trust", img: "/src/assets/images/news_featured_1_1779011146657.png" },
+               { id: 1, cat: "Impact", title: "New Outreach Research Advances Public Health", img: "/images/news_coverage_1_1779011165326.png" },
+               { id: 2, cat: "Together", title: "Global Teams Advance Next Generation Faith", img: "/images/church_hero_spirit_1779011074740.png" },
+               { id: 3, cat: "Empower", title: "Ministries Protect Communities Worldwide", img: "/images/church_community_outreach_1779011107802.png" },
+               { id: 4, cat: "Integrity", title: "Transparent Research Builds Public Trust", img: "/images/news_featured_1_1779011146657.png" },
              ].map(item => (
                 <div key={item.id} className="reveal-up group cursor-pointer bg-white p-6 shadow-sm hover:shadow-xl transition-all">
                    <div className="relative aspect-square overflow-hidden mb-6">
@@ -102,7 +102,7 @@ export function NewsPage() {
                ].map(item => (
                  <div key={item.id} className="group cursor-pointer">
                     <div className="relative aspect-[4/5] overflow-hidden mb-6">
-                       <img src="/src/assets/images/news_grid_1_1779011181863.png" className="w-full h-full object-cover" alt="grid" />
+                       <img src="/images/news_grid_1_1779011181863.png" className="w-full h-full object-cover" alt="grid" />
                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
                           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-white/70 mb-2">{item.cat} • April 16, 2026</p>
                           <h4 className="text-xl font-black text-white leading-tight">{item.title}</h4>
@@ -131,7 +131,7 @@ export function NewsPage() {
                   </p>
                   <div className="my-16">
                      <img 
-                       src="/src/assets/images/news_coverage_1_1779011165326.png" 
+                       src="/images/news_coverage_1_1779011165326.png" 
                        className="w-full aspect-video object-cover shadow-2xl" 
                        alt="detail" 
                      />
@@ -144,8 +144,8 @@ export function NewsPage() {
                     Our outreach programs have seen a 40% increase in participation over the last year, demonstrating the hunger for meaningful connection and spiritual grounding. This momentum fuels our commitment to serve Harrisburg and its people with renewed vigor.
                   </p>
                   <div className="grid grid-cols-2 gap-8 my-16">
-                     <img src="/src/assets/images/church_leaders_portrait_1779011093532.png" className="w-full aspect-square object-cover" />
-                     <img src="/src/assets/images/church_community_outreach_1779011107802.png" className="w-full aspect-square object-cover" />
+                     <img src="/images/church_leaders_portrait_1779011093532.png" className="w-full aspect-square object-cover" />
+                     <img src="/images/church_community_outreach_1779011107802.png" className="w-full aspect-square object-cover" />
                   </div>
                   <p>
                     As we look to the future, we invite you to be part of this continuing story. Faith is not a static state but a journey we take together, supported by the Spirit and guided by the Word.
@@ -167,7 +167,7 @@ export function NewsPage() {
                      ].map(item => (
                        <div key={item.id} className="flex gap-4 group cursor-pointer border-b border-neutral-100 pb-6">
                           <div className="w-20 h-20 bg-neutral-100 flex-shrink-0 overflow-hidden">
-                             <img src="/src/assets/images/news_grid_1_1779011181863.png" className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+                             <img src="/images/news_grid_1_1779011181863.png" className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
                           </div>
                           <div>
                              <p className="text-[9px] font-black uppercase tracking-widest text-[#8B11B1] mb-1">{item.cat} • April 16, 2026</p>

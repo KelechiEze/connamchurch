@@ -3,18 +3,18 @@ import { gsap } from 'gsap';
 import { motion } from 'motion/react';
 
 const CHURCH_ART = [
-  { id: 1, image: '/src/assets/images/church_hero_spirit_1779011074740.png', tag: 'Spirit' },
-  { id: 2, image: '/src/assets/images/church_community_outreach_1779011107802.png', tag: 'Service' },
-  { id: 3, image: '/src/assets/images/church_leaders_portrait_1779011093532.png', tag: 'Leadership' },
-  { id: 4, image: '/src/assets/images/church_sermon_media_1779011123956.png', tag: 'Preaching' },
-  { id: 5, image: '/src/assets/images/news_featured_1_1779011146657.png', tag: 'Sanctuary' },
-  { id: 6, image: '/src/assets/images/news_grid_1_1779011181863.png', tag: 'Fellowship' },
-  { id: 7, image: '/src/assets/images/hero_bg_community_1779009595537.png', tag: 'Assembly' },
-  { id: 8, image: '/src/assets/images/hero_bg_abstract_1779009650835.png', tag: 'Meditation' },
-  { id: 9, image: '/src/assets/images/news_coverage_1_1779011165326.png', tag: 'Outreach' },
-  { id: 10, image: '/src/assets/images/church_hero_spirit_1779011074740.png', tag: 'Worship' },
-  { id: 11, image: '/src/assets/images/church_community_outreach_1779011107802.png', tag: 'Mission' },
-  { id: 12, image: '/src/assets/images/church_sermon_media_1779011123956.png', tag: 'Evangelism' },
+  { id: 1, image: '/images/church_hero_spirit_1779011074740.png', tag: 'Spirit' },
+  { id: 2, image: '/images/church_community_outreach_1779011107802.png', tag: 'Service' },
+  { id: 3, image: '/images/church_leaders_portrait_1779011093532.png', tag: 'Leadership' },
+  { id: 4, image: '/images/church_sermon_media_1779011123956.png', tag: 'Preaching' },
+  { id: 5, image: '/images/news_featured_1_1779011146657.png', tag: 'Sanctuary' },
+  { id: 6, image: '/images/news_grid_1_1779011181863.png', tag: 'Fellowship' },
+  { id: 7, image: '/images/hero_bg_community_1779009595537.png', tag: 'Assembly' },
+  { id: 8, image: '/images/hero_bg_abstract_1779009650835.png', tag: 'Meditation' },
+  { id: 9, image: '/images/news_coverage_1_1779011165326.png', tag: 'Outreach' },
+  { id: 10, image: '/images/church_hero_spirit_1779011074740.png', tag: 'Worship' },
+  { id: 11, image: '/images/church_community_outreach_1779011107802.png', tag: 'Mission' },
+  { id: 12, image: '/images/church_sermon_media_1779011123956.png', tag: 'Evangelism' },
 ];
 
 interface ScrollColumnProps {

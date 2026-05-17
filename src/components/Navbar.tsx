@@ -180,17 +180,13 @@ export function Navbar() {
         transition={{ delay: 0.5, duration: 1, ease: [0.16, 1, 0.3, 1] }}
         className="fixed top-0 z-50 flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.3)] group/nav"
       >
-        {/* Logo with Image */}
+        {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <motion.div 
             whileHover={{ rotate: 180 }}
-            className="w-10 h-10 flex items-center justify-center overflow-hidden bg-[#8B11B1]"
+            className="w-10 h-10 bg-[#8B11B1] flex items-center justify-center shadow-lg shadow-[#8B11B1]/40"
           >
-            <img 
-              src="/src/assets/images/conamlogo.jpg" 
-              alt="Anglican Church of Pentecost Logo"
-              className="w-full h-full object-cover"
-            />
+            <span className="text-white font-black text-[10px]">ACP</span>
           </motion.div>
           <div className="flex flex-col">
             <span className="text-white font-black text-sm uppercase tracking-tighter leading-none">Anglican Church</span>

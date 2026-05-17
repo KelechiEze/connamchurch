@@ -7,25 +7,25 @@ const tabs = [
     id: "01.",
     title: "Youth Ministry",
     description: "Nurturing our young people to walk in the power of the Spirit and discover their divine purpose in God's kingdom.",
-    image: "/src/assets/images/peace_sign_girl_1779010514133.png"
+    image: "/images/peace_sign_girl_1779010514133.png"
   },
   {
     id: "02.",
     title: "Global Outreach",
     description: "Taking the gospel to the ends of the earth and providing sanctuary for those in need through missions and relief.",
-    image: "/src/assets/images/church_community_outreach_1779011107802.png"
+    image: "/images/church_community_outreach_1779011107802.png"
   },
   {
     id: "03.",
     title: "Media & Media",
     description: "Spread the light through modern technology, ensuring our services and teachings reach everyone, everywhere.",
-    image: "/src/assets/images/church_sermon_media_1779011123956.png"
+    image: "/images/church_sermon_media_1779011123956.png"
   },
   {
     id: "04.",
     title: "Kingdom Resources",
     description: "Study Scripture and draw closer to God through His living Word with our curated study tools and resources.",
-    image: "/src/assets/images/hero_bg_abstract_1779009650835.png"
+    image: "/images/hero_bg_abstract_1779009650835.png"
   }
 ];
 

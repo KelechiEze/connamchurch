@@ -16,9 +16,9 @@ interface Clergy {
 const clergyList: Clergy[] = [
   {
     id: 1,
-    name: "VENERABLE SAMUEL & MRS BASEME ANYANWU",
-    role: "SENIOR PASTOR & WOMEN MINISTRY LEADER",
-    image: "/src/assets/images/clergy1.jpg",
+    name: "Canon Chinatu",
+    role: "Lead Pastor / Rector",
+    image: "/images/church_leaders_portrait_1779011093532.png",
     shortBio: "A visionary leader dedicated to the spiritual growth and transformation of the Harrisburg community.",
     fullBio: "Canon Chinatu has served the Anglican community for over two decades. His ministry is characterized by a deep commitment to expository preaching and pastoral care. He believes in the power of the Holy Spirit to transform lives and is passionate about equipping the local church for global mission. Under his leadership, the Anglican Church of the Pentecost has grown into a vibrant family of believers dedicated to the truth of the Gospel.",
     email: "canonchinatu57@gmail.com",
@@ -26,9 +26,9 @@ const clergyList: Clergy[] = [
   },
   {
     id: 2,
-    name: "Rev. Canon Dr. Ebere & Mrs Dorothy Eze",
-    role: "Associate pastor & Assistant Women Ministry leader",
-    image: "/src/assets/images/clergy2.jpg",
+    name: "Rev. Dr. Sarah Miller",
+    role: "Associate Priest",
+    image: "/images/church_hero_spirit_1779011074740.png",
     shortBio: "Specializing in family ministry and theological education with a heart for community outreach.",
     fullBio: "Rev. Dr. Sarah Miller brings a wealth of experience in theological education and family counseling. She oversees our education programs and is instrumental in our local outreach initiatives. Her heart beats for the marginalized, and she works tirelessly to ensure that our church remains a sanctuary for all souls seeking grace.",
     email: "sarah.miller@acp-hbg.org",
@@ -120,7 +120,7 @@ export function ClergyPage() {
                animate={{ y: 0, opacity: 1 }}
                exit={{ y: 100, opacity: 0 }}
                transition={{ type: "spring", damping: 30, stiffness: 200 }}
-               className="bg-white w-full max-w-6xl h-[95vh] md:h-[95vh] overflow-hidden flex flex-col md:flex-row relative"
+               className="bg-white w-full max-w-6xl h-full md:h-auto overflow-hidden flex flex-col md:flex-row relative"
              >
                 {/* Close Button */}
                 <button 
@@ -130,11 +130,11 @@ export function ClergyPage() {
                    <X className="w-6 h-6" />
                 </button>
 
-                <div className="md:w-1/2 h-[40vh] md:h-full">
+                <div className="md:w-1/2 h-[40vh] md:h-[80vh]">
                    <img src={selectedClergy.image} className="w-full h-full object-cover" alt={selectedClergy.name} />
                 </div>
                 
-                <div className="md:w-1/2 p-8 md:p-20 overflow-y-auto max-h-[60vh] md:max-h-full flex flex-col justify-center">
+                <div className="md:w-1/2 p-8 md:p-20 overflow-y-auto max-h-[60vh] md:max-h-[80vh] flex flex-col justify-center">
                    <motion.p 
                      initial={{ opacity: 0, x: 20 }}
                      animate={{ opacity: 1, x: 0 }}
@@ -146,7 +146,7 @@ export function ClergyPage() {
                      initial={{ opacity: 0, x: 20 }}
                      animate={{ opacity: 1, x: 0 }}
                      transition={{ delay: 0.1 }}
-                     className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1e2a4a] tracking-tighter uppercase italic leading-tight mb-8"
+                     className="text-5xl md:text-7xl font-black text-[#1e2a4a] tracking-tighter uppercase italic leading-none mb-10"
                    >
                      {selectedClergy.name}
                    </motion.h2>
@@ -155,7 +155,7 @@ export function ClergyPage() {
                      initial={{ opacity: 0 }}
                      animate={{ opacity: 1 }}
                      transition={{ delay: 0.2 }}
-                     className="space-y-6 text-gray-500 text-base leading-relaxed font-medium mb-10"
+                     className="space-y-6 text-gray-500 text-base leading-relaxed font-medium mb-12"
                    >
                       <p>{selectedClergy.fullBio}</p>
                    </motion.div>
@@ -164,19 +164,19 @@ export function ClergyPage() {
                      initial={{ opacity: 0, y: 20 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ delay: 0.3 }}
-                     className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-neutral-100"
+                     className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 border-t border-neutral-100"
                    >
                       <div className="space-y-1">
                          <p className="text-[10px] font-black uppercase tracking-widest text-neutral-300">Email Address</p>
-                         <p className="font-bold text-[#1e2a4a] flex items-center gap-2 text-sm break-all">
-                            <Mail className="w-4 h-4 text-[#8B11B1] flex-shrink-0" />
+                         <p className="font-bold text-[#1e2a4a] flex items-center gap-2">
+                            <Mail className="w-4 h-4 text-[#8B11B1]" />
                             {selectedClergy.email}
                          </p>
                       </div>
                       <div className="space-y-1">
                          <p className="text-[10px] font-black uppercase tracking-widest text-neutral-300">Contact Number</p>
-                         <p className="font-bold text-[#1e2a4a] flex items-center gap-2 text-sm">
-                            <Phone className="w-4 h-4 text-[#8B11B1] flex-shrink-0" />
+                         <p className="font-bold text-[#1e2a4a] flex items-center gap-2">
+                            <Phone className="w-4 h-4 text-[#8B11B1]" />
                             {selectedClergy.phone}
                          </p>
                       </div>

@@ -49,7 +49,7 @@ export function SplitScrollSection() {
         <div className="relative w-full h-full p-8 lg:p-16 flex items-center justify-center">
           <div className="relative w-full aspect-[4/5] max-h-[80vh]">
             <img 
-              src="/src/assets/images/protest_community_1_1779010038513.png" 
+              src="/images/protest_community_1_1779010038513.png" 
               alt="Community Action" 
               className="w-full h-full object-cover rounded-2xl shadow-2xl"
             />
@@ -70,7 +70,7 @@ export function SplitScrollSection() {
       <div className="md:hidden w-full px-4 pt-12">
           <div className="relative">
             <img 
-              src="/src/assets/images/protest_community_1_1779010038513.png" 
+              src="/images/protest_community_1_1779010038513.png" 
               alt="Community Action" 
               className="w-full aspect-[4/5] object-cover rounded-xl shadow-lg"
             />
@@ -106,7 +106,7 @@ export function SplitScrollSection() {
 
         <div className="right-block">
             <img 
-              src="/src/assets/images/church_leaders_portrait_1779011093532.png" 
+              src="/images/church_leaders_portrait_1779011093532.png" 
               alt="Our Spiritual Leaders" 
               className="w-full aspect-[4/5] object-cover rounded-2xl shadow-xl hover:scale-[1.02] transition-transform duration-700"
             />
@@ -125,10 +125,10 @@ export function SplitScrollSection() {
         <div className="right-block pb-32">
            <div className="grid grid-cols-2 gap-4">
               <div className="aspect-[3/4] bg-neutral-200 rounded-xl overflow-hidden">
-                 <img src="/src/assets/images/church_hero_spirit_1779011074740.png" className="w-full h-full object-cover" alt="Spirit" />
+                 <img src="/images/church_hero_spirit_1779011074740.png" className="w-full h-full object-cover" alt="Spirit" />
               </div>
               <div className="aspect-[3/4] bg-neutral-100 rounded-xl overflow-hidden mt-12">
-                 <img src="/src/assets/images/church_community_outreach_1779011107802.png" className="w-full h-full object-cover" alt="Outreach" />
+                 <img src="/images/church_community_outreach_1779011107802.png" className="w-full h-full object-cover" alt="Outreach" />
               </div>
            </div>
         </div>

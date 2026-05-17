@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const images = [
-  "/src/assets/images/church_hero_spirit_1779011074740.png",
-  "/src/assets/images/hero_bg_community_1779009595537.png",
-  "/src/assets/images/church_sermon_media_1779011123956.png",
-  "/src/assets/images/hero_bg_abstract_1779009650835.png",
+  "/images/church_hero_spirit_1779011074740.png",
+  "/images/hero_bg_community_1779009595537.png",
+  "/images/church_sermon_media_1779011123956.png",
+  "/images/hero_bg_abstract_1779009650835.png",
 ];
 
 export function Hero() {

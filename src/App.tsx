@@ -4,7 +4,6 @@ import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { ProjectMarquee } from "./components/ProjectMarquee";
 import { ChurchShowcase } from "./components/ChurchShowcase";
-import { MissionSection } from "./components/MissionSection";
 import { SplitScrollSection } from "./components/SplitScrollSection";
 import { StackedCardSection } from "./components/StackedCardSection";
 import { PromiseSection } from "./components/PromiseSection";
@@ -34,21 +33,21 @@ function NewsPreviewSection() {
       category: "Kingdom Progress",
       date: "May 15, 2026",
       title: "Advancing Change Through Consistent and Visible Leadership in the Church",
-      image: "/src/assets/images/church_hero_spirit_1779011074740.png"
+      image: "/images/church_hero_spirit_1779011074740.png"
     },
     {
       id: 2,
       category: "Community Impact",
       date: "May 12, 2026",
       title: "How Our New Mission Project is Touching Lives in Harrisburg",
-      image: "/src/assets/images/church_community_outreach_1779011107802.png"
+      image: "/images/church_community_outreach_1779011107802.png"
     },
     {
       id: 3,
       category: "Spiritual Growth",
       date: "May 10, 2026",
       title: "Be Encouraged: Testimony from Last Sunday's Renewed Spirit Service",
-      image: "/src/assets/images/news_grid_1_1779011181863.png"
+      image: "/images/news_grid_1_1779011181863.png"
     }
   ];
 
@@ -115,7 +114,6 @@ function LandingPage() {
       <SplitScrollSection />
       <StackedCardSection />
       <PromiseSection />
-      <MissionSection />
       <TabbedSection />
       <NewsPreviewSection />
       <ValuesSection />

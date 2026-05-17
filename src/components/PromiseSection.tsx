@@ -6,7 +6,7 @@ export function PromiseSection() {
       {/* Fixed Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-fixed bg-cover bg-center"
-        style={{ backgroundImage: `url('/src/assets/images/hero_promise_bg_1779010237110.png')` }}
+        style={{ backgroundImage: `url('/images/hero_promise_bg_1779010237110.png')` }}
       >
         <div className="absolute inset-0 bg-black/10" />
       </div>
