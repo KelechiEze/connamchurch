@@ -5,25 +5,8 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# IMPORTANT: Order matters! Put more specific rules first
-[[redirects]]
-  from = "/assets/*"
-  to = "/assets/:splat"
-  status = 200
-  force = false
-
-# Catch-all for SPA - but DON'T redirect assets
+# This is critical - handles SPA routing without breaking assets
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false
-  # Exclude static assets from being redirected
-  conditions = { Role = ["!/*.js", "!/*.css", "!/*.png", "!/*.jpg", "!/*.mp4"] }
-
-# Better approach - use this instead of the above
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  except = ["/*.js", "/*.css", "/*.png", "/*.jpg", "/*.jpeg", "/*.svg", "/*.ico", "/*.webp", "/*.mp4", "/*.webm", "/assets/*"]
