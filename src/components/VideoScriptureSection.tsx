@@ -4,20 +4,43 @@ import { motion } from "motion/react";
 export function VideoScriptureSection() {
   return (
     <section className="relative min-h-[60vh] flex items-center py-24 px-4 sm:px-8 lg:px-20 overflow-hidden">
-      {/* Background Video */}
+      {/* Fixed Background Video */}
       <div className="absolute inset-0 z-0">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          className="w-full h-full object-cover"
+        <div 
+          className="absolute inset-0"
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: -1,
+            overflow: 'hidden',
+          }}
         >
-          <source 
-            src="/images/connamvideo.mp4" 
-            type="video/mp4" 
-          />
-        </video>
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="w-full h-full object-cover"
+            style={{
+              position: 'fixed',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              minWidth: '100%',
+              minHeight: '100%',
+              width: 'auto',
+              height: 'auto',
+            }}
+          >
+            <source 
+              src="/images/connamvideo.mp4" 
+              type="video/mp4" 
+            />
+          </video>
+        </div>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60 z-10" />
       </div>
