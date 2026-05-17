@@ -187,7 +187,7 @@ export function Navbar() {
             className="w-10 h-10 flex items-center justify-center overflow-hidden bg-[#8B11B1]"
           >
             <img 
-              src="/images/connamlogo.jpg" 
+              src="/images/conamlogo.jpg" 
               alt="Anglican Church of Pentecost Logo"
               className="w-full h-full object-contain p-1.5"
             />
